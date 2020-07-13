@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools" android:id="@+id/ScrollView1"
+	android:layout_width="match_parent" android:layout_height="match_parent">
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical" android:layout_width="match_parent"
+		android:layout_height="match_parent" android:background="#000000"
+		android:id="@+id/parent">
+
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="match_parent" android:layout_height="wrap_content">
+			<TextView android:layout_width="120dp" android:id="@+id/textView1"
+				android:layout_height="wrap_content" android:text="배열 요소 개수"
+				android:textSize="13sp" />
+			<Spinner android:entries="@array/add" android:layout_width="100dp"
+				android:layout_height="wrap_content" android:id="@+id/Spinner" />
+			<Button android:layout_width="100dp" android:layout_height="wrap_content"
+				android:text="배열 생성" android:id="@+id/pushButton" />
+		</LinearLayout>
+
+
+		<LinearLayout android:id="@+id/dynamicArea"
+			android:orientation="vertical" android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+
+
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="vertical" android:layout_width="match_parent"
+			android:layout_height="match_parent" android:background="#000000"
+			android:id="@+id/child">
+
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="match_parent" android:layout_height="70dp">
+				<TextView android:layout_width="150dp" android:id="@+id/textView"
+					android:layout_height="wrap_content" android:text="덧셈 결과:"
+					android:textSize="13sp" />
+
+				<EditText android:layout_width="150dp"
+					android:layout_height="wrap_content" android:id="@+id/answer" />
+
+			</LinearLayout>
+
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="match_parent" android:layout_height="70dp">
+				<Button android:layout_width="150dp" android:layout_height="wrap_content"
+					android:text="확인" android:id="@+id/Confirm" />
+
+				<Button android:layout_width="150dp" android:layout_height="wrap_content"
+					android:text="Clear" android:id="@+id/Clear" />
+			</LinearLayout>
+			<TextView android:layout_width="150dp" android:id="@+id/setText"
+				android:layout_height="wrap_content" android:textSize="13sp" />
+		</LinearLayout>
+
+
+	</LinearLayout>
+
+</ScrollView>
+
